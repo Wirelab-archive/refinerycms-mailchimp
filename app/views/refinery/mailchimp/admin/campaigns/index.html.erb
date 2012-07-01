@@ -1,19 +1,4 @@
-<div id='actions'>
-  <ul>
-    <% if ::Refinery::Mailchimp::Admin::CampaignsController.searchable? %>
-      <li>
-        <%= render :partial => "/refinery/admin/search",
-                    :locals => {
-                      :url => refinery.mailchimp_admin_campaigns_url
-                    } %>
-      </li>
-    <% end %>
-    <li>
-      <%= link_to t('.create_new'), refinery.new_mailchimp_admin_campaign_url,
-                   :class => "add_icon" %>
-    </li>
-  </ul>
-</div>
+<%= render '/refinery/mailchimp/admin/submenu' %>
 <div id='records'>
   <% if searching? %>
     <h2><%= t('shared.admin.search.results_for', :query => params[:search]) %></h2>

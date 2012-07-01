@@ -15,7 +15,6 @@ en:
                 mailchimp_admin_base_url: The base URL of your Mailchimp admin area. This is used to generate links to your campaigns for convenience. Only change it if you know what you're doing.
           campaigns:
             index:
-              create_new: Create a new Campaign
               reorder: Reorder Campaigns
               reorder_done: Done Reordering Campaigns
               sorry_no_results: Sorry! There are no results found.
@@ -55,6 +54,12 @@ en:
               from_email_help: "The From: email address for your campaign message. You can change the default in Settings."
               auto_tweet: Auto Tweet
               auto_tweet_help: Automatically tweet about this campaign when sent. Requires setting up Twitter from Mailchimp.
+          submenu:
+            campaigns: Campaigns
+            create_new: Create a new Campaign
+            settings: Settings
+            general_settings: General settings
+            
         subscriptions:
           success: Subscription was succesful.
           invalid_email: Email address is invalid.

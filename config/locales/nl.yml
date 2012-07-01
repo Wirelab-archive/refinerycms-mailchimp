@@ -15,7 +15,6 @@ nl:
                 mailchimp_admin_base_url: The base URL of your Mailchimp admin area. This is used to generate links to your campaigns for convenience. Only change it if you know what you're doing.
           campaigns:
             index:              
-              create_new: Maak een nieuwe campagne
               reorder: Wijzig de volgorde van de campagnes
               reorder_done: Klaar met het wijzingen van de volgorde van de campagnes
               sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
@@ -55,6 +54,11 @@ nl:
               from_email_help: "Het email adres waarvan de campagne word verstuurd. Bij instellingen kan de standaard ingesteld worden."
               auto_tweet: Auto Tweet
               auto_tweet_help: Verstuur automatisch een tweet over deze campagne wanneer deze verstuurd word. Hiervoor moet Twitter moet bij Mailchimp ingesteld zijn.
+          submenu:
+            campaigns: Campagnes
+            create_new: Maak een nieuwe campagne
+            settings: Instellingen
+            general_settings: Algemene instellingen
         subscriptions:
           success: Aanmelding was succesvol.
           invalid_email: Email is ongeldig.

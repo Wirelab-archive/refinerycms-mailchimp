@@ -1,0 +1,30 @@
+<% content_for :stylesheets, stylesheet_link_tag('refinery/mailchimp/backend') %>
+
+<div id='actions' class='multilist'>
+  <ul class="search_list">
+    <% if ::Refinery::Mailchimp::Admin::CampaignsController.searchable? %>
+      <li>
+        <%= render :partial => "/refinery/admin/search",
+                    :locals => {
+                      :url => refinery.mailchimp_admin_campaigns_url
+                    } %>
+      </li>
+    <% end %>
+  </ul>
+  <ul class='collapsible_menu'>
+  	<li class='not_a_link'>
+  	  <%= link_to t('.campaigns'), '#', :class => "edit_email_icon" %>
+  	</li>
+    <li>
+      <%= link_to t('.create_new'), refinery.new_mailchimp_admin_campaign_url, :class => "add_icon" %>
+    </li>
+  </ul>
+  <ul class='collapsible_menu'>
+  	<li class='not_a_link'>
+  	  <%= link_to t('.settings'), '#', :class => "settings_icon" %>
+  	</li>
+  	<li>
+  	  <%= link_to t('.general_settings'), '#', :class => "settings_icon" %>
+  	</li>
+  </ul>
+</div>
