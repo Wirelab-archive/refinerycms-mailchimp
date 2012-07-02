@@ -11,6 +11,13 @@ Refinery::Core::Engine.routes.draw do
           post :unschedule
         end
       end
+      
+      resources :settings do
+        collection do
+          get :general_settings
+          post :general_settings
+        end
+      end
     end
 
     # Frontend routes
